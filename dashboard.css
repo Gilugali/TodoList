@@ -1,0 +1,495 @@
+:root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #EEE;
+}
+
+*{
+padding: 0;
+margin: 0;
+/* background: black; */
+/* color: rgb(42 39 39); */
+/* color: white; */
+scroll-behavior: smooth;
+}
+body
+{
+    background-color: black;
+    color: white;
+
+    
+}
+#search{
+    background: rgb(42 39 39);
+    outline: none;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 16px;
+    padding: 10px;
+    width: 83rem;
+    color: aliceblue;
+    height: 1.4rem;
+    margin-top: 20px;
+    margin-left: 270px;
+}
+
+
+
+/*search tools*/
+
+
+.top-dash{
+    display: flex;
+    margin-top: 40px;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 30px;
+    cursor: pointer;
+}
+/*scheduled tools*/
+.dash-scheduled{
+    background: rgb(42 39 39);
+    width: 390px;
+    height: 250px;
+    border-radius: 40px;
+    
+}
+#num-scheduled {
+    text-align: right;
+    /* padding: 5px; */
+    text-align: right;
+    padding: 15px;
+    justify-content: end;
+    font-size:5rem;
+    color: white;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.text-scheduled{
+
+
+    color: white;
+    margin-top: 40px;
+    padding-left: 15px;
+    font-size: 1.6rem;
+}
+
+.fa-trash{
+    background:#59AFFF;
+    color: green;
+    width: 45px;
+    font-size: 90px;
+    padding: 20px;
+    font-weight: bolder;
+    height: 45px;
+    border-radius: 50px;
+     margin-top: 10px; 
+    margin-left: 0px; 
+    outline: none;
+    border: none;
+    
+
+}
+
+
+
+/*today tools*/
+
+.today{
+  background: rgb(42 39 39);
+  width: 390px;
+  height: 250px;
+  border-radius: 40px;
+}
+#num-today{ 
+    /* padding: 10px; */
+    text-align: right;
+    padding: 15px;
+    justify-content: end;
+    font-size:5rem;
+    color: white;
+    padding-top: px;
+
+}
+.text-today{
+    color: white;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    font-size: 1.6rem;
+}
+ .calender{
+    background:#59AFFF;
+    color: white;
+    width: 45px;
+    font-weight: bolder;
+    height: 45px;
+    border-radius: 50px;
+     margin-top: 18px; 
+    margin-left: 19px; 
+    outline: none;
+    border: none;
+ }
+
+ 
+
+ /*all tools*/
+
+ .dash-all{
+    background-color: rgb(42 39 39);
+    width: 82rem;
+    height: 9rem;
+    color:white;
+    border-radius: 40px;
+    margin-left: 14%;
+    margin-top: 2%;
+    padding: 20px;
+}
+#num-all{
+    font-size: 5rem;
+    text-align: right;
+    margin-top: -2.9%;
+    font-weight: bold;
+}
+.text-all{
+    font-size: 1.6rem;
+    margin-left: 1.7%;
+    margin-top: -0.5%;
+    font-weight: bold;
+}
+.uil-layers {
+    background: rgb(121, 121, 121);
+    border-radius: 50px;
+     font-size: 50px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+.text-mylist{
+    font-size: 1.6rem;
+    color: white;
+    font-weight: bold;
+    margin-left: 14%;
+    margin-top: .9%;
+}
+.lists{
+    background: rgb(42 39 39);
+    width: 82rem;
+    height: 16rem;
+    color:white;
+    border-radius: 15px;
+    margin-left: 14%;
+    margin-top: 2%;
+    padding: 20px;
+}
+
+.newlist{
+    font-size: 1.4rem;
+   font-weight: bold;
+    list-style: none;
+    margin-left: 1.7%;
+}
+
+
+
+    hr { 
+        display: block; height: 1px;
+        border: 0; border-top: 1px solid rgb(85, 83, 83);
+        margin: 1em 0; padding: 0; }
+  
+
+
+.uil-circle{
+    margin-left: -2%;
+    margin-top:8%;
+    
+}
+
+.buttos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.reminder{
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    height: 80px;
+    padding: 8px;
+    position: absolute;
+    top: 20%;
+    right: 40%;
+    width: 20%;
+    margin-bottom: 30px;
+    background: #59AFFF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.add-list{
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    position: absolute;
+    top: 20%;
+    right: 54%;
+    height: 80px;
+    padding: 5px;
+    margin-top: 0px;
+    background: #59AFFF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100px;
+}
+/* popup list nanme */
+
+.popup-list{
+    display: none;
+    background: #59AFFF;
+    width: 560px;
+    height: 250px;
+    position: absolute;
+    top: 40%;
+    right: 32%;
+    padding: 20px;
+    border-radius: 15px;
+
+}
+.container#blur.active{
+    filter: blur(10px);
+}
+
+  
+
+.input-popup{
+    padding: 7px;
+    background:none;
+    width: 95%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-top: 6%;
+    margin-left:-2%;
+    color: white;
+    font-size: 1.2rem;
+}
+.input-popup::placeholder{
+    color: white;
+}
+.title{
+    text-align: center;
+    padding: 5px;
+}
+#ListItem{
+    margin-top: 29px;
+    margin-left: 200px;
+    width: 100px;
+    background: rgb(42 39 39);
+    color: white;
+    height: 45px;
+    padding:5px;
+    border: none;
+    font-weight: bold;
+    outline: none;
+    border-radius: 15px;
+    transition: 0.9s ease;
+    font-size: 0.8rem;
+}
+#ListItem:hover{
+    background: white;
+    color: black;
+    transition: 0.9s;
+}
+
+.uil-times{
+ font-size: 40px;
+ margin-left: 90%;
+ cursor: pointer;
+}
+.uil-times:hover{
+    color: rgb(42 39 39);
+}
+.add-reminder{
+    display: none;
+    background: #59AFFF;
+    width: 660px;
+    height: 38  0px;
+    position: absolute;
+    top: 40%;
+    right: 32%;
+    padding: 20px;
+    border-radius: 15px;
+}
+#notes{
+    background:rgb(255, 255, 255);
+    
+    width: 98.8%;
+    height: 150px;
+    border-radius: 10px;
+    outline:none;   
+    margin-top: 13px;
+    padding: 5px;
+    margin-left: -2.5%;
+    border: none;
+}
+#add-reminders{
+    margin-top: 40px;
+    margin-left: 250px;
+    width: 120px;
+    background: rgb(42 39 39);
+    color: white;
+    height: 45px;
+    padding:5px;
+    border: none;
+    font-weight: bold;
+    outline: none;
+    border-radius: 15px;
+    transition: 0.9s ease;
+    font-size: 0.8rem;
+}
+
+
+
+
+/* the input value css */
+
+.input{
+    position: absolute;
+    top: 20%;
+    right: 38%;
+    width: 450px;
+    background: none;
+    border: none;
+    outline:none;
+    color: white;
+    border-bottom: 1px solid #59AFFF;
+    padding:10px;
+    font-size: 1.2rem
+   
+}
+.input:focus{
+    border: solid rgb(121, 121, 121);
+    border-radius: 10px;
+}
+.addTask{
+    position: absolute;
+    top: 27%;
+    right: 47%;
+    background: #59AFFF;
+    height: 40px;
+    width: 150px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: initial;
+    cursor: progress;
+}
+.addTask:hover{
+    background: rgb(42 39 39);
+    color: #59AFFF;
+    font-weight: bold;
+    font-size: 18px;
+}
+.addTask:focus{
+    outline: inset;
+    /* border: dashed; */
+    font-size: 16px;
+    color: pink;
+    background: rgb(42 39 39);
+}
+/* css for the task to be done*/
+
+.task{
+    display:flex;
+    margin-left: 13.2%;
+    margin-top: 20px;
+    background: rgb(42 39 39); 
+        width: 95rem;
+    height: auto;
+    font-size: 20px;
+    padding:20px;
+    box-shadow: 0 0 10px rgb(42 39 39);
+    border-radius: 20px;
+ 
+}
+.deleteTask{
+    
+    font-style: italic;
+    background: none;
+    border: none;
+    outline: none;
+    background-color: none;
+    cursor: pointer;
+	
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: capitalize;
+	transition: 0.4s;
+    cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.5rem;
+	font-weight: 700;
+	transition: 0.4s;
+    color: var(--pink);
+}
+.deleteTask:hover{
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.textOnList{
+    font-size: 25px;
+    margin: 2px;
+    padding: 3px;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    width: 90rem;
+}
+.actions{
+
+    display: flex;
+	margin: 0 86.5rem;
+    justify-content: space-around;
+    overflow-x: hidden;
+}
+.editTask{
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 1.5rem;
+    color: var(--pink);
+
+}
+.editTask:hover{
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.time{
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 14%;
+    left: 47%;
+    font-weight: bold;
+    color: var(--pink);
+
+}

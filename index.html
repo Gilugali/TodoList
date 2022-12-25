@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--favicons links      -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./dashboard.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title> Dashboard | reminder</title>
+</head>
+
+<body>
+    <div class="container =" id="blur">
+        <input type="text" placeholder="search...." id="search" name="search">
+        <div class="dash-tools">
+            <div class="top-dash">
+                <div class="today">
+                    <button class="calender"></button>
+                    <p id="num-today">0</p>
+                    <p class="text-today">Today</p>
+                </div>
+                <div class="dash-scheduled">
+                    <p id="num-scheduled"><i class="fa-solid fa-trash"></i>0</p>
+                    <p class="text-scheduled">Deleted</p>
+                </div>
+
+            </div>
+
+            <!-- all the reminders in the app-->
+            <div class="dash-all">
+                <i class="uil uil-layers"></i>
+                <p id="num-all">0</p>
+                <h3 class="text-all">All</h3>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- adding the remindes or tasks-->
+    <header>
+
+        <form class="form">
+
+            <input type="text" placeholder="what up to ?" class="input">
+            <input type="submit" class="addTask" value="Really?">
+        </form>
+    </header>
+    <main>
+        <section class="taskList">
+            <p class="text-mylist"> My Lists</p>
+            <div class="tasks">
+                <!-- <div class="task">
+                <div class="content">
+                <input type="text" class="textOnList"  value='justin is still the king' readonly>
+                </div>
+            <div class="actions">
+                <button class="editTask">edit</button>
+                <button class="deleteTask">delete</button>
+            </div>  -->
+            </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="./app.js"></script>
+    <!-- <script src="/js/server.js"></script> -->
+
+</html>

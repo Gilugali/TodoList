@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--favicons links      -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title> Dashboard | reminder</title>
+</head>
+<body>
+    <form action="" method="POST" id="blur">
+    <div class="container =" id="blur">
+            <input type="text"  placeholder="search...."  id="search" name="search">
+        <div class="dash-tools">
+            <div class="top-dash">
+            <div class="today">
+                 <button class="calender">23</button>
+                <p id="num-today">17</p>
+                <p class="text-today">Today</p>
+            </div>
+            <div class="dash-scheduled">
+                
+                 <p id="num-scheduled"><i class="uil uil-schedule"></i>16</p>
+                <p class="text-scheduled">Scheduled</p>
+            </div>
+        </div>
+            <div class="dash-all">
+                <i class="uil uil-layers"></i>
+                <p id="num-all">34</p>
+                <h3 class="text-all">All</h3>
+            </div>
+            <p class="text-mylist"> My Lists</p>
+            <div class="dash-mylists">
+                <ul class="lists">
+                 <li class="newlist">Justin</li></i>
+                    <hr>
+                <li class="newlist">Reminders</li></i>
+                    <hr>
+            <li class="newlist">mugisha</li>
+                    <hr>
+                </ul>
+            </div>
+            
+            <div class="buttos">
+                <button id="reminder" >New Reminder</button>
+                <button  id="add-list">Add list</button>
+               
+            </div>
+        </div>
+    </div>
+    <div class="popup-list">
+        <i class="uil uil-times" id="close"></i>
+        <h2 class="title">List name</h2>
+        <input type="text" href="#" class="input-popup"  placeholder="List Name">
+        <button  href="#"  id="add-lists">ADD LIST</button>
+    </div>
+    <div class="add-reminder">
+        <i class="uil uil-times" id="close-reminder"></i>
+        <h2 class="title">New Reminder</h2>
+        <input type="text" placeholder="Title" class="input-popup">
+        <textarea name="notes" id="notes" placeholder="notes"></textarea>
+        <button  href="#"  id="add-reminders">New Reminder</button>
+    </div>
+    </form>
+    <script src="/js/app.js"></script> 
+    <script src="/js/server.js"></script>
+
+</html>
